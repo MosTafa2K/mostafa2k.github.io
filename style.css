@@ -1,0 +1,140 @@
+:root{font-family:"Vazirmatn",Tahoma,sans-serif;color:#172033;background:#f5f7fb;font-synthesis:none}*{box-sizing:border-box}body{min-height:100vh;margin:0;display:grid;place-items:center;padding:24px;overflow:hidden;background:radial-gradient(circle at 12% 12%,rgba(120,103,255,.12),transparent 28%),radial-gradient(circle at 92% 86%,rgba(44,191,173,.13),transparent 25%),#f5f7fb}.profile-card{position:relative;width:min(100%,620px);min-height:650px;display:flex;flex-direction:column;justify-content:space-between;isolation:isolate;overflow:hidden;border:1px solid rgba(255,255,255,.8);border-radius:32px;background:rgba(255,255,255,.82);box-shadow:0 24px 70px rgba(42,51,80,.14);backdrop-filter:blur(16px)}.profile-content{position:relative;z-index:1;max-width:480px;margin:auto;padding:70px 32px 45px;text-align:center}.avatar{width:82px;height:82px;display:grid;place-items:center;margin:0 auto 25px;border:7px solid rgba(255,255,255,.8);border-radius:50%;color:#fff;background:linear-gradient(145deg,#7f6bff,#5546ce);box-shadow:0 12px 25px rgba(91,75,220,.28);font-size:2rem;font-weight:700}.eyebrow{margin:0 0 8px;color:#6f64d9;font-size:.88rem;font-weight:700;letter-spacing:.02em}h1{margin:0;color:#1d2641;font-size:clamp(2rem,7vw,3rem);line-height:1.35;letter-spacing:-.04em}.role{margin:10px 0 0;color:#62708c;font-size:1rem;font-weight:500}.intro{margin:28px auto 34px;color:#66728a;font-size:1rem;line-height:2.1}.github-link{min-height:58px;display:inline-flex;align-items:center;gap:12px;padding:0 20px;border-radius:16px;color:#fff;background:#1d2641;box-shadow:0 12px 22px rgba(29,38,65,.18);font-size:.95rem;font-weight:600;text-decoration:none;transition:transform 180ms ease,background 180ms ease,box-shadow 180ms ease}.github-link:hover,.github-link:focus-visible{background:#5145bb;box-shadow:0 15px 28px rgba(81,69,187,.25);transform:translateY(-3px)}.github-link:focus-visible{outline:3px solid rgba(111,100,217,.3);outline-offset:4px}.github-link svg{width:23px;height:23px;fill:currentColor}.arrow{margin-right:4px;font-size:1.25rem;line-height:1}.profile-footer{position:relative;z-index:1;display:flex;justify-content:center;align-items:center;gap:11px;padding:20px;color:#9aa3b6;border-top:1px solid rgba(36,46,76,.06);font-size:.78rem}.dot{width:4px;height:4px;border-radius:50%;background:#a59cf4}.accent-shape{position:absolute;z-index:-1;border-radius:50%;opacity:.7;filter:blur(1px)}.accent-shape--top{width:190px;height:190px;top:-92px;left:-55px;background:#eeeaff}.accent-shape--bottom{width:230px;height:230px;right:-105px;bottom:-120px;background:#e4f7f4}@media (max-width:480px){body{padding:14px}.profile-card{min-height:calc(100vh - 28px);border-radius:25px}.profile-content{padding:60px 24px 35px}.github-link{width:100%;justify-content:center}}
+:root {
+  background: #07110f;
+}
+
+body {
+  position: relative;
+  color: #d8eee8;
+  background:
+    linear-gradient(rgba(20, 89, 75, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 89, 75, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 15% 10%, rgba(32, 190, 141, 0.14), transparent 28%),
+    #07110f;
+  background-size: 34px 34px, 34px 34px, auto, auto;
+}
+
+body::before {
+  position: absolute;
+  content: "< / >";
+  top: 7%;
+  right: 8%;
+  color: rgba(68, 211, 168, 0.2);
+  font-family: Consolas, monospace;
+  font-size: clamp(1rem, 3vw, 1.8rem);
+  letter-spacing: 0.2em;
+}
+
+.profile-card {
+  border: 1px solid rgba(68, 211, 168, 0.26);
+  border-radius: 18px;
+  background: rgba(10, 27, 23, 0.92);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.42), 0 0 0 1px rgba(68, 211, 168, 0.04);
+  backdrop-filter: blur(18px);
+}
+
+.profile-card::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 38px;
+  content: "●  ●  ●";
+  padding: 9px 16px;
+  color: #36c69a;
+  border-bottom: 1px solid rgba(68, 211, 168, 0.16);
+  background: rgba(5, 16, 14, 0.75);
+  direction: ltr;
+  font-family: Consolas, monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+}
+
+.profile-content {
+  padding-top: 86px;
+}
+
+.avatar {
+  border: 1px solid rgba(117, 241, 198, 0.55);
+  border-radius: 14px;
+  color: #75f1c6;
+  background: #102f28;
+  box-shadow: 0 0 28px rgba(40, 211, 157, 0.17);
+  font-family: Consolas, monospace;
+}
+
+.eyebrow {
+  color: #49d6a5;
+  font-family: Consolas, monospace;
+}
+
+h1 {
+  color: #effff9;
+}
+
+.role {
+  color: #8bcbb7;
+}
+
+.intro {
+  color: #99b7ad;
+}
+
+.github-link {
+  border: 1px solid rgba(76, 224, 171, 0.35);
+  border-radius: 10px;
+  color: #07110f;
+  background: #4cdda8;
+  box-shadow: 0 12px 25px rgba(38, 204, 148, 0.16);
+}
+
+.github-link:hover,
+.github-link:focus-visible {
+  color: #07110f;
+  background: #80f5c9;
+  box-shadow: 0 15px 30px rgba(38, 204, 148, 0.28);
+}
+
+.profile-footer {
+  color: #668a7d;
+  border-top-color: rgba(68, 211, 168, 0.13);
+  font-family: Consolas, monospace;
+}
+
+.dot {
+  background: #49d6a5;
+}
+
+.accent-shape--top {
+  background: rgba(31, 151, 115, 0.18);
+}
+
+.accent-shape--bottom {
+  background: rgba(23, 108, 111, 0.2);
+}
+
+@media (max-width: 700px) {
+  body { min-height: 100svh; overflow-y: auto; }
+  .profile-card { width: 100%; min-height: auto; }
+  .profile-content {
+    padding-right: clamp(22px, 7vw, 40px);
+    padding-left: clamp(22px, 7vw, 40px);
+  }
+}
+
+@media (max-width: 480px) {
+  body { min-height: 100svh; padding: 12px; }
+  .profile-card { min-height: calc(100svh - 24px); border-radius: 18px; }
+  .profile-card::before { height: 34px; padding: 8px 13px; }
+  .profile-content { padding-top: 70px; padding-bottom: 32px; }
+  .avatar { width: 70px; height: 70px; margin-bottom: 20px; }
+  .intro { margin-top: 22px; margin-bottom: 28px; font-size: .92rem; line-height: 1.95; }
+  .github-link { min-height: 54px; padding-right: 15px; padding-left: 15px; font-size: .86rem; }
+  .profile-footer { padding: 16px; font-size: .7rem; }
+}
+
+@media (max-height: 700px) and (min-width: 481px) {
+  body { overflow-y: auto; }
+  .profile-card { min-height: auto; }
+  .profile-content { padding-top: 55px; padding-bottom: 30px; }
+}
